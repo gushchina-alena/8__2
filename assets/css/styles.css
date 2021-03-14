@@ -1,0 +1,141 @@
+@import "normalize.css";
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.vr__logo-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.header__main-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.header__text {
+    margin-left: 4em;
+    max-width: 50%;
+    text-align: left; 
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header__img {
+    width: 50%;
+}
+
+.header__btn_big button {
+    padding: 1.3rem;
+    font-size: 1.75rem;
+} 
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+
+li {
+    list-style: none;
+    padding: 1em;
+}
+
+.nav__link a {
+    color: #5222D0;
+    
+}
+
+.nav__flex-list,
+.section-nav__flex-list {
+    width: 100vw;
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.section-nav a {
+    color: #000000;
+}
+
+.benefits {
+    margin-top: 5rem;
+}
+
+.benefits__cards_half_form {
+    background-color: #EC615B;
+    color: white;
+    display: block;
+}
+
+input {
+    padding-top: 1em;
+    display: inline-block;
+    height: 30%;
+    max-width: 100%;
+}
+
+.benefits__cards__btn {
+    max-width: 100%;
+    margin-left: 5em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    .header__img {
+        min-width: 50vw;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .nav__flex-list,
+.section-nav__flex-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+}
+
+@media screen and (max-width: 583px) {
+    .header__main-flex {
+        flex-direction: column;
+    }
+
+    
+    .header__img {
+        order: 1;
+        width: 100%;
+    }
+
+    .header__text {
+        order: 2;
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
